@@ -12,7 +12,7 @@ The project includes a test form with customizable fields demonstrating its use.
 
 
 ```c#
-var notification = new Notification.Control.Notification(Style.Slide, 250, Direction.Left)
+var notification = new Notification(Style.Slide, 250, Direction.Left)
 {
     Title = "Hello World",
     Body = "Your body",
@@ -23,7 +23,7 @@ var notification = new Notification.Control.Notification(Style.Slide, 250, Direc
 
     ScreenPadding = 10,
 
-    Icon = new Notification.Model.Icon()
+    Icon = new Icon()
     {
         Image = Image.FromFile(@".."),
         Padding = 5,
